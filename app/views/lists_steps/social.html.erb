@@ -1,0 +1,36 @@
+<div id="formulario">
+  <div id="header"></div>
+  <div class="body">
+    <div class="registro">Paso 2</div>
+
+      <%= form_for(@list, url: wizard_path, :method => :put) do |f| %>
+        <div class="field">
+          <label><i class="fa fa-facebook-official"></i>&nbsp;Facebook:</label>
+          <%= f.text_field :fb %>
+        </div>
+
+        <div class="field">
+          <label><i class="fa fa-instagram"></i>&nbsp;Instagram:</label>
+          <%= f.text_field :insta %>
+        </div>
+
+        <div class="field">
+          <label><i class="fa fa-twitter"></i>&nbsp;Twitter:</label>
+          <%= f.text_field :tw %>
+        </div>
+
+        <div class="field">
+          <label><i class="fa fa-snapchat"></i>&nbsp;Snapchat:</label>
+          <%= f.text_field :snap %>
+        </div>
+
+        <div class="right">
+          <%= f.submit 'Continuar', class: 'send' %>
+        </div>
+
+      <% end %>
+      
+    </div>
+  <div id="foot">Excelencia para el desarrollo</div>
+</div>
+

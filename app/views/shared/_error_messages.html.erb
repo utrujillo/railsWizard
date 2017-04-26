@@ -1,0 +1,13 @@
+  
+
+<% if object.errors.any? %>
+  <div class="mensaje-error">
+    <div class="error-msg">
+      <i class="fa fa-times-circle"></i>&nbsp;<%= object.errors.count > 1 ? "#{object.errors.count} errores fueron encontrados" : "#{object.errors.count} error fue encontrado" %> antes de continuar
+    </div>
+
+    <% object.errors.full_messages.each do |message| %>
+      <p><%= message %></p>
+    <% end %>
+  </div>
+<% end %>

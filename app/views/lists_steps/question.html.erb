@@ -1,0 +1,34 @@
+<div id="formulario">
+  <div id="header"></div>
+  <div class="body">
+    <div class="registro">Paso 3</div>
+
+      <%= form_for(@list, url: wizard_path, :method => :put) do |f| %>
+        <div class="field">
+          <label class="question">Cómo te enteraste de la semana de Arquitectura-Ingenieria?</label>
+          <%= f.text_field :pregunta1, class: 'question' %>
+        </div>
+
+        <div class="field">
+          <label class="question">Qué conferencias llaman más tu atención?</label>
+          <%= f.text_field :pregunta2, class: 'question' %>
+        </div>
+
+        <div class="field">
+          <label class="question">Qué taller vas a tomar?</label>
+          <%= f.text_field :pregunta3, class: 'question' %>
+        </div>
+
+        <div class="field">
+          <label class="question">Qué temas te gustaría ver en un futuro?</label>
+          <%= f.text_field :pregunta4, class: 'question' %>
+        </div>
+
+        <div class="right">
+          <%= f.submit 'Finalizar', class: 'send' %>
+        </div>
+      <% end %>
+      
+    </div>
+  <div id="foot">Excelencia para el desarrollo</div>
+</div>
