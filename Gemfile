@@ -24,7 +24,7 @@ gem 'compass-rails'
 gem 'font-awesome-rails'
 gem 'wicked'
 gem 'validates_email_format_of'
-
+gem 'activeadmin'
 
 group :development, :test do
   gem 'byebug', platform: :mri
