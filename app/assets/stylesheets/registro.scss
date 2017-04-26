@@ -1,6 +1,6 @@
 @import "compass/css3";
 
-@font-face{font-family:'sf_movie_poster';src:url("//asiasur.com/font/sf_movie_poster-webfont.eot");src:url("//asiasur.com/font/sf_movie_poster-webfont.eot?#iefix") format("embedded-opentype"),url("//asiasur.com/font/sf_movie_poster-webfont.woff") format("woff"),url("//asiasur.com/font/sf_movie_poster-webfont.ttf") format("truetype"),url("//asiasur.com/font/sf_movie_poster-webfont.svg#sf_movie_poster") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'daxcompact-regularregular';src:url("//asiasur.com/font/daxcompact-regular-webfont.eot");src:url("//asiasur.com/font/daxcompact-regular-webfont.eot?#iefix") format("embedded-opentype"),url("//asiasur.com/font/daxcompact-regular-webfont.woff") format("woff"),url("//asiasur.com/font/daxcompact-regular-webfont.ttf") format("truetype"),url("//asiasur.com/font/daxcompact-regular-webfont.svg#daxcompact-regularregular") format("svg");font-weight:normal;font-style:normal}
+@font-face{font-family:'sf_movie_poster';font-src:url("//asiasur.com/font/sf_movie_poster-webfont.eot");font-src:url("//asiasur.com/font/sf_movie_poster-webfont.eot?#iefix") format("embedded-opentype"),url("//asiasur.com/font/sf_movie_poster-webfont.woff") format("woff"),url("//asiasur.com/font/sf_movie_poster-webfont.ttf") format("truetype"),url("//asiasur.com/font/sf_movie_poster-webfont.svg#sf_movie_poster") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'daxcompact-regularregular';font-src:url("//asiasur.com/font/daxcompact-regular-webfont.eot");font-src:url("//asiasur.com/font/daxcompact-regular-webfont.eot?#iefix") format("embedded-opentype"),font-url("//asiasur.com/font/daxcompact-regular-webfont.woff") format("woff"),font-url("//asiasur.com/font/daxcompact-regular-webfont.ttf") format("truetype"),font-url("//asiasur.com/font/daxcompact-regular-webfont.svg#daxcompact-regularregular") format("svg");font-weight:normal;font-style:normal}
 
 $header-font: 'sf_movie_poster', arial, sans-serif;
 $header-alt-font: 'daxcompact-regularregular', arial, sans-serif;
@@ -14,7 +14,7 @@ $header-alt-font: 'daxcompact-regularregular', arial, sans-serif;
 html, body {
   margin: 0;
   padding: 0;
-  background: #f2f2f2 url('pattern.png');
+  background: #f2f2f2 image-url('pattern.png');
 }
 #formulario {
   width: 810px;
@@ -23,7 +23,7 @@ html, body {
     width: 100%;
     height: 60px;
     background-color: #000;
-    background-image: url('logo.png');
+    background-image: image-url('logo.png');
     background-repeat: no-repeat;
     background-position: center;
   }
