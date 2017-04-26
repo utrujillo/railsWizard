@@ -83,7 +83,7 @@ body {
   bottom: 0;
   text-align: center;
 }
-.test-completion .buttons .button {
+.test-completion .buttons .buttonFinish {
   display: block;
   text-decoration: none;
   color: #fff;
@@ -96,16 +96,16 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
-.test-completion .buttons .button:hover span {
+.test-completion .buttons .buttonFinish:hover span {
   border-bottom: 2px solid #fff;
 }
-.test-completion .buttons .button:not(:last-of-type) {
+.test-completion .buttons .buttonFinish:not(:last-of-type) {
   margin-bottom: 12px;
 }
-.test-completion .buttons .button.light {
-  background-color: #4fc3f7;
+.test-completion .buttons .buttonFinish.light {
+  background-color: #4fc3f7 !important;
 }
-.test-completion .buttons .button.dark {
+.test-completion .buttons .buttonFinish.dark {
   background-color: #0288d1;
 }
 @-webkit-keyframes slideIn {
