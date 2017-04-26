@@ -24,7 +24,7 @@ gem 'font-awesome-rails'
 gem 'wicked'
 gem 'validates_email_format_of'
 gem 'activeadmin'
-# gem 'devise'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug', platform: :mri
