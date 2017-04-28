@@ -11,7 +11,27 @@
 
         <div class="field">
           <label class="question">Qué conferencias llaman más tu atención?</label>
-          <%= f.text_field :pregunta2, class: 'question' %>
+          <%  
+            conf = [
+                      "Conferencia de Estrategias de diseño urbano arquitectónico",
+                      "Taller de muros verdes",
+                      "Conferencia de Vivienda Emergente",
+                      "Conferencia de nuevas técnologias de anti-corrosivos",
+                      "Taller sketchup",
+                      "Conferencia de mejora continua en el sector de la construcción",
+                      "Productividad de las empresas con las apps de telefonia celular y su impacto en México",
+                      "Conferencia de Pisos 3D",
+                      "Conferencia de vida profesional después de la universidad",
+                      "Taller de Fibra Optica",
+                      "Conferencia de Aplicaciones con Raspberry Pi",
+                      "Conferencia de Energías renovables",
+                      "Conferencia de Iluminación",
+                      "Taller de domótica e iluminación para arquitectos",
+                      "Conferencia de implementación de sistemas inteligentes",
+                      "Conferencia de realidad aumentada",
+                    ]
+          %>
+          <%= f.select :pregunta2, conf, {}, { multiple: true, class: 'question' } %>
         </div>
 
         <div class="field">
@@ -30,5 +50,5 @@
       <% end %>
       
     </div>
-  <div id="foot">Excelencia para el desarrollo</div>
+    <div id="foot">Semana de Arquitectura e Ingenieria (2 - 5 Mayo) 2017</div>
 </div>

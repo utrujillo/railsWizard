@@ -86,7 +86,7 @@ html, body {
         input[type=text],select{
             width: 495px;
         }
-        input.question, textarea{
+        input.question, textarea, select.question{
             width: 374px;
         }
         input[type=text],select, textarea{
@@ -126,9 +126,10 @@ html, body {
             margin: 7px 0;
             border-radius: 0;
             cursor:pointer;
+            height: 150px;
             background: {
                 image: url('http://asiasur.com/wp-content/uploads/2013/05/arrow.png');
-                position: 135px center;
+                position: 355px center;
                 repeat: no-repeat;
                 size: 15px;
             }

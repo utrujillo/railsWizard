@@ -10,6 +10,9 @@ class ListsStepsController < ApplicationController
 
   def update
     @list = List.last
+    if params[:list][:pregunta2].present?
+      params[:list][:pregunta2] = params[:list][:pregunta2].join(",");
+    end
     @list.update(list_params)
     render_wizard @list
   end
