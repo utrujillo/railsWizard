@@ -41,6 +41,7 @@ class ListsController < ApplicationController
   # PATCH/PUT /lists/1.json
   def update
     respond_to do |format|
+      binding.pry
       if @list.update(list_params)
         format.html { redirect_to @list, notice: 'List was successfully updated.' }
         format.json { render :show, status: :ok, location: @list }
